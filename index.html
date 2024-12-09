@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body background="5570215.jpg">
+<body>
     <header>
         <div class="logo">
             <img src="logo.png" alt="Logo">
@@ -20,64 +21,74 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Home Section -->
     <section id="home" class="section">
-      <div class="container">
-        <div class="home-content">
-          <div class="home-description">
-            <h3>Hello, it's me</h3>
-            <h1><span id="dynamic-text">Gouri Nandhan P V</span></h1>
-            <p>I am a Data Analyst with expertise in data analysis, data visualization, and Python programming.</p>
-          </div>
-          <div class="profile-photo">
-            <img src="profile.png" alt="Profile Photo">
-          </div>
-        </div>
-      </div>
-    </section>    
-    <section id="about" class="section">
         <div class="container">
-            <div class="about-content">
-                <div class="about-description">
-                    <h2>About Me</h2>
-                    <p>My name is Gouri Nandhan PV, a Data Analyst with strong knowledge in data analytics tools like Excel, SQL, and Python. I hold a Bachelor's degree in Computer Applications and have completed a certification in Data Science and Machine Learning from Entri Elevate in collaboration with Illinois Tech University.</p>
-                    <p>I specialize in data preprocessing, exploratory data analysis (EDA), and data visualization. I am passionate about deriving actionable insights from data to drive business decisions. My aim is to continue growing as a professional in data analytics and contribute to meaningful projects in this field.</p>
+            <div class="home-content">
+                <div class="home-description">
+                    <h3>Hello, it's me</h3>
+                    <h1><span id="dynamic-text">Gouri Nandhan P V</span></h1>
+                    <p>I am a Data Analyst with expertise in data analysis, visualization, and Python programming.</p>
+                </div>
+                <div class="profile-photo">
+                    <img src="profile.png" alt="Profile Photo">
                 </div>
             </div>
         </div>
+    </section>    
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>I'm Gouri Nandhan PV, a passionate Data Analyst with expertise in **Python**, **Excel**, **SQL**, and **Data Visualization**. I have a BCA degree and a certification in Data Science and Machine Learning from Entri Elevate in collaboration with Illinois Tech University.</p>
+                <p>I aim to derive meaningful insights from data to support strategic decision-making. My skills include data preprocessing, exploratory data analysis (EDA), and creating interactive visualizations using Python and Excel.</p>
+            </div>
+        </div>
     </section>
+
+    <!-- Skills Section -->
     <section id="skills" class="section">
         <div class="container">
             <h2>Skills</h2>
             <div class="skills-content">
-                <div class="skills-graph">
-                    <div class="skill">
-                        <div class="skill-name">Excel (Advanced) 90%</div>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 90%;"></div>
+                <div class="skills-cards">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="python-icon.png" alt="Python">
                         </div>
+                        <h3>Python</h3>
+                        <p>Expertise in using Python for data analysis and machine learning, including libraries like Pandas, NumPy, and Scikit-Learn.</p>
                     </div>
-                    <div class="skill">
-                        <div class="skill-name">Python (Data Analysis) 80%</div>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 80%;"></div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="sql-icon.png" alt="SQL">
                         </div>
+                        <h3>SQL</h3>
+                        <p>Proficient in querying and managing databases using SQL. Skilled in creating efficient queries and data manipulation.</p>
                     </div>
-                    <div class="skill">
-                        <div class="skill-name">SQL 70%</div>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 70%;"></div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="excel-icon.png" alt="Excel">
                         </div>
+                        <h3>Excel</h3>
+                        <p>Advanced knowledge in Excel for data analysis, including pivot tables, formulas, and complex data visualization.</p>
                     </div>
-                    <div class="skill">
-                        <div class="skill-name">Data Visualization (Matplotlib, Seaborn) 75%</div>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 75%;"></div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <img src="tableau-icon.png" alt="Tableau">
                         </div>
+                        <h3>Data Visualization</h3>
+                        <p>Skilled in creating interactive dashboards and visualizations using tools like Tableau and Python libraries (Matplotlib, Seaborn).</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Projects Section -->
     <section id="projects" class="section">
         <div class="container">
             <h2>Projects</h2>
@@ -88,13 +99,15 @@
                     <p><strong>Skills Used:</strong> Python, Pandas, Matplotlib, Seaborn, Data Cleaning, Data Visualization, EDA</p>
                 </div>
                 <div class="project">
-                    <h3>Sales Data Analysis (Example Project)</h3>
+                    <h3>Sales Data Analysis</h3>
                     <p>Performed analysis of sales data to identify key trends, patterns, and correlations between various factors affecting sales performance. Created visual dashboards to summarize findings for key stakeholders.</p>
                     <p><strong>Skills Used:</strong> Excel, SQL, Data Visualization, Trend Analysis, Dashboard Creation</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Footer Section -->
     <footer id="contact">
         <div class="footer-contact">
             Email: <a href="mailto:gourinandhanpv@gmail.com">gourinandhanpv@gmail.com</a> | 
@@ -106,10 +119,10 @@
             <li><a href="https://www.linkedin.com/in/gouri-nandhan-p-v-90b51b224"><img src="linkedin.png" alt="LinkedIn"></a></li>
         </ul>
         <div class="footer-copyright">
-            &copy; 2023 gourinandhanpv.github.io. All rights reserved.
+            &copy; 2024 gourinandhanpv.github.io. All rights reserved.
         </div>
     </footer>
-      
+
     <script src="script.js"></script>
 </body>
 </html>
