@@ -7,7 +7,7 @@
 body {
   font-family: Arial, sans-serif;
   color: #ddd;
-  background-color: #0f1f2b;  /* Dark aquatic background */
+  background-color: #1a2d42;  /* Dark aquatic background */
   background-size: cover;
 }
 
@@ -44,7 +44,7 @@ header {
 }
 
 .header-links li a:hover {
-  color: #666;
+  color: #66b0ff;  /* Lighter blue on hover */
 }
 
 .section {
@@ -83,7 +83,7 @@ header {
 }
 
 .skill-card {
-  background-color: #1a2d42;
+  background-color: #274c6b;
   padding: 20px;
   border-radius: 8px;
   text-align: center;
@@ -91,7 +91,7 @@ header {
 }
 
 .skill-card:hover {
-  background-color: #274c6b;
+  background-color: #3a6f8f;
 }
 
 .skill-icon img {
@@ -133,5 +133,5 @@ footer {
 }
 
 .social-links li a:hover {
-  color: #888;
+  color: #66b0ff;  /* Lighter blue on hover */
 }
