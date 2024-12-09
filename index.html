@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <title>Portfolio - Gouri Nandhan PV</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
             <img src="logo.png" alt="Logo">
         </div>
         <nav>
-            <ul class="header-links">
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -23,103 +23,86 @@
     </header>
 
     <!-- Home Section -->
-    <section id="home" class="section">
+    <section id="home" class="section banner">
         <div class="container">
             <div class="home-content">
-                <div class="home-description">
-                    <h3>Hello, it's me</h3>
-                    <h1><span id="dynamic-text">Gouri Nandhan P V</span></h1>
-                    <p>I am a Data Analyst with expertise in data analysis, visualization, and Python programming.</p>
+                <div class="text-content">
+                    <h1>Hi, I'm <span>Gouri Nandhan PV</span></h1>
+                    <p>A Data Analyst passionate about uncovering insights through data and creating impactful visualizations.</p>
                 </div>
                 <div class="profile-photo">
                     <img src="profile.jpg" alt="Profile Photo">
                 </div>
             </div>
         </div>
-    </section>    
+    </section>
 
     <!-- About Section -->
-    <section id="about" class="section">
+    <section id="about" class="section banner">
         <div class="container">
-            <div class="about-content">
-                <h2>About Me</h2>
-                <p>I'm Gouri Nandhan PV, a passionate Data Analyst with expertise in **Python**, **Excel**, **SQL**, and **Data Visualization**. I have a BCA degree and a certification in Data Science and Machine Learning from Entri Elevate in collaboration with Illinois Tech University.</p>
-                <p>I aim to derive meaningful insights from data to support strategic decision-making. My skills include data preprocessing, exploratory data analysis (EDA), and creating interactive visualizations using Python and Excel.</p>
-            </div>
+            <h2>About Me</h2>
+            <p>I'm a Data Analyst with expertise in Python, SQL, and Excel. I enjoy solving data problems and creating interactive visualizations.</p>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section">
+    <section id="skills" class="section banner">
         <div class="container">
             <h2>Skills</h2>
             <div class="skills-content">
-                <div class="skills-cards">
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <img src="python-icon.png" alt="Python">
-                        </div>
-                        <h3>Python</h3>
-                        <p>Expertise in using Python for data analysis and machine learning, including libraries like Pandas, NumPy, and Scikit-Learn.</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <img src="sql-icon.png" alt="SQL">
-                        </div>
-                        <h3>SQL</h3>
-                        <p>Proficient in querying and managing databases using SQL. Skilled in creating efficient queries and data manipulation.</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <img src="excel-icon.png" alt="Excel">
-                        </div>
-                        <h3>Excel</h3>
-                        <p>Advanced knowledge in Excel for data analysis, including pivot tables, formulas, and complex data visualization.</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <img src="tableau-icon.png" alt="Tableau">
-                        </div>
-                        <h3>Data Visualization</h3>
-                        <p>Skilled in creating interactive dashboards and visualizations using tools like Tableau and Python libraries (Matplotlib, Seaborn).</p>
-                    </div>
+                <div class="skill-card">
+                    <img src="python-icon.png" alt="Python">
+                    <h3>Python</h3>
+                    <p>Proficient in Pandas, NumPy, and data analysis techniques.</p>
+                </div>
+                <div class="skill-card">
+                    <img src="sql-icon.png" alt="SQL">
+                    <h3>SQL</h3>
+                    <p>Experienced in creating efficient queries for data extraction.</p>
+                </div>
+                <div class="skill-card">
+                    <img src="excel-icon.png" alt="Excel">
+                    <h3>Excel</h3>
+                    <p>Advanced skills in data visualization and analysis using Excel.</p>
+                </div>
+                <div class="skill-card">
+                    <img src="tableau-icon.png" alt="Tableau">
+                    <h3>Data Visualization</h3>
+                    <p>Skilled in creating dashboards using Tableau and Power BI.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section">
+    <section id="projects" class="section banner">
         <div class="container">
             <h2>Projects</h2>
             <div class="projects-content">
                 <div class="project">
-                    <h3>Employee Data Analysis and Visualization</h3>
-                    <p>Analyzed and visualized employee data using Python and Pandas. The project involved data preprocessing, cleaning, and identifying insights such as trends in age, salary, and team distribution. Visualized findings using Matplotlib and Seaborn.</p>
-                    <p><strong>Skills Used:</strong> Python, Pandas, Matplotlib, Seaborn, Data Cleaning, Data Visualization, EDA</p>
+                    <img src="employee-data.jpg" alt="Employee Data Project">
+                    <h3>Employee Data Analysis</h3>
+                    <p>Analyzed and visualized employee data for insights.</p>
                 </div>
                 <div class="project">
-                    <h3>Sales Data Analysis</h3>
-                    <p>Performed analysis of sales data to identify key trends, patterns, and correlations between various factors affecting sales performance. Created visual dashboards to summarize findings for key stakeholders.</p>
-                    <p><strong>Skills Used:</strong> Excel, SQL, Data Visualization, Trend Analysis, Dashboard Creation</p>
+                    <img src="sales-analysis.jpg" alt="Sales Analysis Project">
+                    <h3>Sales Analysis</h3>
+                    <p>Identified trends and correlations in sales data.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer Section -->
+    <!-- Contact Section -->
     <footer id="contact">
-        <div class="footer-contact">
-            Email: <a href="mailto:gourinandhanpv@gmail.com">gourinandhanpv@gmail.com</a> | 
-            Phone: <a href="tel:+918590709539">+91 8590709539</a>
-        </div>
-        <ul class="social-links">
-            <li><a href="http://discordapp.com/users/gourinandhan#4737"><img src="Discord Logo Circle.png" alt="Discord"></a></li>
-            <li><a href="https://github.com/gourinandhan"><img src="icons8-github-420.png" alt="GitHub"></a></li>
-            <li><a href="https://www.linkedin.com/in/gouri-nandhan-p-v-90b51b224"><img src="linkedin.png" alt="LinkedIn"></a></li>
-        </ul>
-        <div class="footer-copyright">
-            &copy; 2023 gourinandhanpv.github.io. All rights reserved.
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:gourinandhanpv@gmail.com">gourinandhanpv@gmail.com</a></p>
+            <p>Phone: <a href="tel:+918590709539">+91 8590709539</a></p>
+            <ul class="social-links">
+                <li><a href="#"><img src="github-icon.png" alt="GitHub"></a></li>
+                <li><a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a></li>
+            </ul>
         </div>
     </footer>
 
