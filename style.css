@@ -10,55 +10,6 @@ body {
     background-color: #f8f9fa;
     color: #333;
     line-height: 1.6;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-/* Dark Mode Styles */
-body.dark-mode {
-    background-color: #333;
-    color: #f8f9fa;
-}
-
-body.dark-mode .home-card, 
-body.dark-mode .skills-card, 
-body.dark-mode .projects-card {
-    background-color: #444;
-    color: #f8f9fa;
-}
-
-body.dark-mode header {
-    background-color: #222;
-}
-
-body.dark-mode .nav-links li a {
-    color: #f8f9fa;
-}
-
-body.dark-mode .nav-links li a:hover {
-    color: #ffa726;
-}
-
-body.dark-mode footer {
-    background-color: #222;
-}
-
-body.dark-mode .skill-card {
-    background-color: #555;
-    color: #f8f9fa;
-}
-
-body.dark-mode .project-card {
-    background-color: #555;
-    color: #f8f9fa;
-}
-
-/* Home Section - Ensure text changes based on theme */
-.home-card h2, .home-card .profile-photo h2 {
-    color: inherit; /* Inherit the color based on dark/light mode */
-}
-
-.home-card p, .skills-card h2, .skills-card .skill-card h3 {
-    color: inherit; /* Inherit color from body */
 }
 
 /* Header Styling */
@@ -80,6 +31,10 @@ header {
 }
 
 /* Navigation Menu */
+.nav-menu {
+    display: flex;
+}
+
 .nav-links {
     list-style: none;
     display: flex;
@@ -101,29 +56,29 @@ header {
     color: #ffa726;
 }
 
-/* Icon Section */
-.icons {
-    display: flex;
-    gap: 20px;
-}
-
-#clock {
-    font-size: 1.2rem;
+/* Hamburger Menu Icon */
+.menu-icon {
+    display: none;
+    font-size: 1.8rem;
+    color: #fff;
+    cursor: pointer;
 }
 
 /* Section Styling */
+.section {
+    padding: 60px 20px;
+}
+
+.white-banner {
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-/* Round-cornered Card Style */
-.home-card, .skills-card, .projects-card {
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px 0;
 }
 
 /* Home Section */
@@ -140,6 +95,7 @@ header {
 
 .text-content h2 {
     font-size: 2rem;
+    color: #333;
     margin-bottom: 10px;
 }
 
@@ -180,6 +136,7 @@ header {
 
 .skill-card h3 {
     font-size: 1.2rem;
+    color: #333;
     margin-bottom: 5px;
 }
 
@@ -246,55 +203,6 @@ footer a:hover {
 
 .social-links li img:hover {
     transform: scale(1.1);
-}
-
-/* Toggle Switch Styles */
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-}
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    transition: 0.4s;
-    border-radius: 34px;
-}
-
-/* Slider Circle */
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    border-radius: 50%;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    transition: 0.4s;
-}
-
-/* When the checkbox is checked, slide the circle */
-input:checked + .slider {
-    background-color: #4CAF50; /* Green when checked */
-}
-
-/* When the checkbox is checked, move the circle */
-input:checked + .slider:before {
-    transform: translateX(26px); /* Moves the circle */
 }
 
 /* Responsive Design for Mobile */
