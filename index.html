@@ -3,104 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Portfolio - Gouri Nandhan PV</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1>Gouri Nandhan</h1>
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="icons">
-            <div class="clock">
-                <div id="clock"></div>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Gouri Nandhan PV</h1>
             </div>
-            <div class="mode-toggle">
-                <label class="switch">
-                    <input type="checkbox" id="themeToggle">
-                    <span class="slider"></span>
-                </label>
+            <div class="menu-icon" onclick="toggleMenu()">
+                ☰
             </div>
+            <nav class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <section class="home">
+
+    <section id="home" class="section white-banner">
+        <div class="container home-content">
+            <div class="profile-photo">
+                <img src="profile.jpg" alt="Gouri Nandhan" class="round-photo">
+            </div>
+            <div class="text-content">
+                <h2>Hello Mates!</h2>
+                <p>I am Gouri Nandhan PV, a Data Analyst passionate about transforming data into actionable insights.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section white-banner">
         <div class="container">
-            <div class="home-card">
-                <div class="home-content">
-                    <div class="text-content">
-                        <h2>Hi, I'm Gouri Nandhan</h2>
-                        <p>a passionate and driven individual with a strong interest in Data Science, Machine Learning, and Cybersecurity. I am currently exploring a variety of fields, including data analytics, machine learning, and security systems, and am always excited to learn new technologies and techniques that can drive real-world impact.</p>
-                        <p>After completing my BCA degree with a 7.23 CGPA, I embarked on a journey to deepen my skills in the tech world. I am currently enrolled in a Data Science and Machine Learning certification program, which has equipped me with knowledge in tools like Python, MySQL, Power BI, and Excel. Additionally, I am exploring the field of cybersecurity through a specialized course and aim to combine my skills in both data science and cybersecurity to contribute to secure and efficient systems.</p>
-                        <p>Outside of work, I enjoy exploring new places on my XPulse 200 motorcycle, and I find peace in riding through the Western Ghats. I am also passionate about listening to high-resolution music, and I believe that a balance between work and leisure is essential for personal growth and success.</p>
-                    </div>
-                    <div class="profile-photo">
-                        <img class="round-photo" src="profile.jpg" alt="Profile">
-                    </div>
+            <h2>About Me</h2>
+            <p>Hello! I’m Gouri Nandhan P V, a passionate data enthusiast who finds meaning in uncovering stories hidden within numbers. With a background in Computer Applications (BCA) and a growing expertise in tools like Python, Power BI, and MySQL, I thrive at the intersection of logic and creativity. I believe that every dataset holds a treasure of insights waiting to be discovered, and I am driven by the challenge of transforming raw information into meaningful solutions.Guided by curiosity and a relentless pursuit of knowledge, I strive to master the art of data analysis and visualization. For me, the world of data is not just about numbers but a canvas to create impact, solve problems, and enable informed decisions. My journey is one of constant learning and growth, as I aim to turn data into a bridge between questions and answers.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="section white-banner">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="python.png" alt="Python">
+                    <h3>Python</h3>
+                    <p>Proficient in data analysis and visualization using libraries like Pandas, Matplotlib, and Seaborn.</p>
+                </div>
+                <div class="skill-card">
+                    <img src="excel.png" alt="Excel">
+                    <h3>Excel</h3>
+                    <p>Experienced in advanced Excel functions, VBA macros, and creating dynamic dashboards.</p>
+                </div>
+                <div class="skill-card">
+                    <img src="powerbi.png" alt="Power BI">
+                    <h3>Power BI</h3>
+                    <p>Skilled in designing interactive dashboards for data storytelling and visualization.</p>
+                </div>
+                <div class="skill-card">
+                    <img src="mysql.png" alt="SQL">
+                    <h3>SQL</h3>
+                    <p>Proficient in writing queries for data manipulation and analysis.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="skills">
+    <section id="projects" class="section white-banner">
         <div class="container">
-            <div class="skills-card">
-                <h2>Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <img src="python-logo.png" alt="Python">
-                        <h3>Python</h3>
-                    </div>
-                    <div class="skill-card">
-                        <img src="html-logo.png" alt="HTML">
-                        <h3>HTML</h3>
-                    </div>
-                    <div class="skill-card">
-                        <img src="css-logo.png" alt="CSS">
-                        <h3>CSS</h3>
-                    </div>
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="project-image1.jpg" alt="Project 1">
+                    <h3>Employee Data Analysis</h3>
+                    <p>Analyzed and visualized employee data using Python, Pandas, and Seaborn to uncover insights.</p>
+                </div>
+                <div class="project-card">
+                    <img src="project-image2.jpg" alt="Project 2">
+                    <h3>Carbon Footprint Tracking</h3>
+                    <p>Developed a Power BI dashboard to track and reduce carbon footprint for a community.</p>
+                </div>
+                <div class="project-card">
+                    <img src="project-image3.jpg" alt="Project 2">
+                    <h3>E-Voting System for College Election</h3>
+                    <p>Developed a Django web applicatioon for conducting and managing election in a college.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="projects">
+    <footer id="contact" class="section">
         <div class="container">
-            <div class="projects-card">
-                <h2>Projects</h2>
-                <div class="project-grid">
-                    <div class="project-card">
-                        <img src="project1.jpg" alt="Project 1">
-                        <h3>Project 1</h3>
-                    </div>
-                    <div class="project-card">
-                        <img src="project2.jpg" alt="Project 2">
-                        <h3>Project 2</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="social-links">
-            <ul>
-                <li><a href="#"><img src="linkedin-logo.png" alt="LinkedIn"></a></li>
-                <li><a href="#"><img src="github-logo.png" alt="GitHub"></a></li>
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:gourinandhanpv@gmail.com">gourinandhanpv@gmail.com</a></p>
+            <p>Phone: <a href="tel:+918590709539">+91 8590709539</a></p>
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com/in/gourinandhanpv/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B63BUcvcBRluaJH6vWlyqUA%3D%3D"><img src="linkedin-logo.png" alt="LinkedIn"></a></li>
+                <li><a href="https://github.com/gourinandhan01"><img src="github-logo.png" alt="GitHub"></a></li>
             </ul>
         </div>
-        <p>&copy; 2024 Gouri Nandhan</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
